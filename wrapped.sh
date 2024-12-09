@@ -37,7 +37,7 @@ BUSIEST_DATE=$(cat $HISTFILE | awk "(\$2 > $SMALLEST_DATE)" | iconv -f utf-8 -t 
 
 echo "Wow! This year you ran \x1b[1m$TOTAL_THIS_YEAR\x1b[0m commands\n"
 
-echo "Here are your top five commands:"
+echo "Here are your top 10 commands:"
 echo "$TOP_TEN" | column -t
 
 echo ""
